@@ -1,0 +1,25 @@
+{
+  "name": "Charm-Crypto Python 3.7",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python3.7",
+        "python.analysis.extraPaths": [
+          "/usr/local/lib/python3.7/site-packages"
+        ]
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-azuretools.vscode-docker",
+        "donjayamanne.python-environment-manager"
+      ]
+    }
+  },
+  "remoteUser": "root",
+  "postCreateCommand": "python3.7 --version"
+}

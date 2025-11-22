@@ -92,29 +92,6 @@ If you use **Visual Studio Code**, this allows you to open the entire project in
 
 ---
 
-## 🧰 devcontainer.json (Included)
-
-```json
-{
-    "name": "Charm-Crypto Dev Environment",
-    "build": {
-        "dockerfile": "../Dockerfile",
-        "context": ".."
-    },
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-python.python",
-                "ms-python.vscode-pylance"
-            ]
-        }
-    },
-    "workspaceFolder": "/app",
-    "postCreateCommand": "python3.7 --version"
-}
-```
-
----
 
 ## 🚀 How to Use the Dev Container
 
